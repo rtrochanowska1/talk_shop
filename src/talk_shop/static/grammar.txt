@@ -1,0 +1,19 @@
+%import common.WS
+%ignore WS
+
+start: price_question | in_stock_question | number_question
+
+price_question: HOW_MUCH BE DET ITEM | HOW_MUCH BE ITEM
+in_stock_question: BE DET ITEM IN_STOCK | BE ITEM IN_STOCK
+number_question: WHAT BE DET NUMBER OF ITEM IN_STOCK | WHAT BE DET NUMBER OF ITEM
+
+HOW_MUCH: "how much"
+BE: "is"|"are"
+DET: "the"|"a"|"any"
+NUMBER: "number"
+IN_STOCK: "in stock"
+WHAT: "what"
+OF: "of"
+ITEM: /[a-z]+/
+
+
