@@ -6,7 +6,7 @@
 from dataclasses import dataclass #do szybkiego tworzenia struktur danych
 from lark import Lark, Token, Tree
 import argparse #do czytania poleceń wpisanych w konsoli przy uruchamianiu
-from data_shop import (
+from models.data_shop import (
     Product,
     add_product,
     clear_db,

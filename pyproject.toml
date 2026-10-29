@@ -27,8 +27,11 @@ dev = [
   "pytest-cov",
   "coverage",
   "pre-commit",
-  "ipython"
+  "ipython",
+  "mypy",
+  “pylint”
 ]
+
 
 nlp = [
     "lark"
